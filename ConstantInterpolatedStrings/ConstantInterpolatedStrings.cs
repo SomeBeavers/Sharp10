@@ -5,9 +5,14 @@ namespace Sharp10
 {
     public class ConstantInterpolatedStrings : Class1Base
     {
-        const string myWholeFilePath = $@"{Lib.Lib.ConstStringFromLib}/README.md";
+        public const string myWholeFilePath = $@"{Lib.Lib.ConstStringFromLib}/README.md";
         const string TitleHeader = "Title";
         const string CountHeader = "Count";
+
+        public void Test()
+        {
+            var s = myWholeFilePath;
+        }
     }
 
     [DebuggerDisplay($"{{{nameof(Class1Base)}}}")]

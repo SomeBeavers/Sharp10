@@ -10,6 +10,11 @@ namespace ConstantInterpolatedStrings
         const string myWholeFilePath2 = $@"{Lib.Lib.ConstStringFromLib}/README.md";
         const string myWholeFilePath3 = $@"{Lib.Lib.ConstStringFromLib}/test";
         private const string FromNuget = $"{ClassFromNuget.ConstStringFromNuget} - from nuget";
+        private const string FromDll = $"{Dll.FromDll.ConstStringFromDll} - from dll";
+
+        public int T = 1;
+        private string notConst = "test";
+        //private const string test = $"{notConst}";
 
 
         [Obsolete($"Ooh, don't use me. Instead, use {nameof(ConstantInterpolatedStrings2)}.")]

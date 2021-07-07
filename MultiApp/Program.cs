@@ -8,8 +8,7 @@ Console.WriteLine(name2);
 
 const string Name = "test" ;
 
-// TODO: debugger hints are not shown
-const string Name2 = $"{Name} : name2";
+string Name2 = $"{Name} : name2";
 
 string Name3 = $"{Name} : name2";
 
