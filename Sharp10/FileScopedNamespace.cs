@@ -1,11 +1,11 @@
-﻿namespace Sharp10.A
-using System;
+﻿//namespace Sharp10.A
+//using System;
 
-class FileScopedNamespace
-{
-    class InnerClass
-    {
+//class FileScopedNamespace
+//{
+//    class InnerClass
+//    {
         
-    }
-}
+//    }
+//}
 
