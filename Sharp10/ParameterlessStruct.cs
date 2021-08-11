@@ -2,17 +2,17 @@
 {
     public struct ParameterlessStruct
     {
-        private string Name;
-        private string Nickname = "s";
+        //private string Name;
+        //private string Nickname = "s";
 
-        public ParameterlessStruct()
-        {
-        }
+        //public ParameterlessStruct()
+        //{
+        //}
 
-        public override string ToString()
-        {
-            return GetType().ToString();
-        }
+        //public override string ToString()
+        //{
+        //    return GetType().ToString();
+        //}
     }
     public class ParameterlessClass
     {

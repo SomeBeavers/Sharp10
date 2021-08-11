@@ -7,17 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharp10", "Sharp10\Sharp10.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiApp", "MultiApp\MultiApp.csproj", "{11445CB1-F59E-4455-8F55-2383B1A0B766}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstantInterpolatedStrings", "ConstantInterpolatedStrings\ConstantInterpolatedStrings.csproj", "{7296EDDE-1FD3-475B-9CFF-D7242516BA2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConstantInterpolatedStrings", "ConstantInterpolatedStrings\ConstantInterpolatedStrings.csproj", "{7296EDDE-1FD3-475B-9CFF-D7242516BA2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{4DBC359F-5E44-41C8-9C5F-31399AB81AD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib", "Lib\Lib.csproj", "{4DBC359F-5E44-41C8-9C5F-31399AB81AD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuget", "Nuget\Nuget.csproj", "{FFADFBA7-4BE1-418F-9649-29C8B929E84C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nuget", "Nuget\Nuget.csproj", "{FFADFBA7-4BE1-418F-9649-29C8B929E84C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dll", "Dll\Dll.csproj", "{A781D971-DF29-412E-AE6D-8D93A6493695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dll", "Dll\Dll.csproj", "{A781D971-DF29-412E-AE6D-8D93A6493695}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework.csproj", "{B2EC4485-E782-4E90-B3E4-BA1347B7CA33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{27B8800D-535E-47FB-8AF4-604F68D029D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{27B8800D-535E-47FB-8AF4-604F68D029D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixedDeconstruction", "MixedDeconstruction\MixedDeconstruction.csproj", "{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSharp10", "NotSharp10\NotSharp10.csproj", "{9D84FF39-6560-4B2B-B42F-F2DF55555307}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,12 +17,12 @@ namespace Sharp10
             f = [A]() => { return ""; };
         }
 
-        [A]
-        private void Test3(out Func<int, int> f)
-        {
-            f = int(int x) => x; // ok
-            int t = f(1);
-        }
+        //[A]
+        //private void Test3(out Func<int, int> f)
+        //{
+        //    f = int(int x) => x; // ok
+        //    int t = f(1);
+        //}
     }
 
     internal class AAttribute : Attribute
