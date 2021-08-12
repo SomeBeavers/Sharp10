@@ -5,4 +5,18 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Nuget" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Dll">
+      <HintPath>..\Dll\bin\Debug\net6.0\Dll.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -3,13 +3,12 @@ using FileScopedNamespace;
 
 [assembly: System1]
 
-namespace FileScopedNamespace
-{
-    public class WithAttribute
-    {
-    }
+namespace FileScopedNamespace;
 
-    public class System1Attribute : Attribute
-    {
-    }
+public class WithAttribute
+{
+}
+
+public class System1Attribute : Attribute
+{
 }

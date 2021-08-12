@@ -8,8 +8,13 @@ namespace FileScopedNamespace; // namespace comment
 /// </summary>
 public class NullableDirective
 {
-    private string? GetString()
+    private string GetString()
     {
         return null;
+    }
+
+    private void Test()
+    {
+        string s = GetString();
     }
 }
