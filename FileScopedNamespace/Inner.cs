@@ -1,14 +1,13 @@
 ﻿// Sharp10 FileScopedNamespace Inner.cs
 
-namespace MyNamespace
-{
+namespace MyNamespace;
+
     #region test
 
-    using System;
+using System;
 
-    #endregion
+#endregion
 
-    internal class MyClass
-    {
-    }
+internal class MyClass
+{
 }
