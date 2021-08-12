@@ -14,13 +14,20 @@ namespace MixedDeconstruction
 
         private void Test(params ClassWithDeconstuctor<int>[] parameters)
         {
+            int Count(out string localVar1)
+            {
+                (var count, localVar1) = parameters[0];
+                (string name, count) = ("", 1);
+                return count;
+            }
+
             var localVar = "";
 
             if (localVar != null)
             {
                 if (parameters.Length == 1)
                 {
-                    (var count, localVar) = parameters[0];
+                    var count = Count(out localVar);
 
                     Method(count, localVar);
                     (count, localVar) = parameters[0];

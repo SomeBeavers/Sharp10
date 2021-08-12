@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConstantInterpolatedStrings_Framework.cs" />
+    <Compile Include="FileScopedNamespace.cs" />
     <Compile Include="MixedDeconstruction_Framework.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

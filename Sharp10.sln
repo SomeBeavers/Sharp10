@@ -19,9 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Fram
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{27B8800D-535E-47FB-8AF4-604F68D029D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixedDeconstruction", "MixedDeconstruction\MixedDeconstruction.csproj", "{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MixedDeconstruction", "MixedDeconstruction\MixedDeconstruction.csproj", "{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSharp10", "NotSharp10\NotSharp10.csproj", "{9D84FF39-6560-4B2B-B42F-F2DF55555307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotSharp10", "NotSharp10\NotSharp10.csproj", "{9D84FF39-6560-4B2B-B42F-F2DF55555307}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileScopedNamespace", "FileScopedNamespace\FileScopedNamespace.csproj", "{DCB93F49-C116-4595-BDE7-649BBE8D29C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D84FF39-6560-4B2B-B42F-F2DF55555307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB93F49-C116-4595-BDE7-649BBE8D29C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB93F49-C116-4595-BDE7-649BBE8D29C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB93F49-C116-4595-BDE7-649BBE8D29C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB93F49-C116-4595-BDE7-649BBE8D29C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

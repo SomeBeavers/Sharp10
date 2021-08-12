@@ -12,6 +12,13 @@
         public string Name { get; init; }
         public static T GenericField;
 
+        private string Test()
+        {
+            return "";
+        }
+
+        int t;
+
         public void Deconstruct(out T genericProperty, out string name)
         {
             genericProperty = GenericProperty;
