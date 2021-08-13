@@ -1,11 +1,3 @@
-﻿using System;
+﻿using UseMultiLib_net6;
 
-namespace UseMultiLib_net6;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-    }
-}
+new FileScopedNamespaceLib();
