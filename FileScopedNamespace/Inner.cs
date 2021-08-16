@@ -1,6 +1,6 @@
 ﻿// Sharp10 FileScopedNamespace Inner.cs
 
-namespace MyNamespace;
+namespace MyNamespace1;
 
     #region test
 
@@ -10,4 +10,14 @@ using System;
 
 internal class MyClass
 {
+}
+
+class MyClass2
+{
+    /// <summary>
+    /// <see cref="MyClass"/>
+    /// </summary>
+    private void Test()
+    {
+    }
 }
