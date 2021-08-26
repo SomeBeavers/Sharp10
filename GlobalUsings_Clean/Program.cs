@@ -1,3 +1,3 @@
 ﻿var list = new List<string>();
 list.FirstOrDefault();
-Console.WriteLine("Hello World!");
+Console.WriteLine("Hello World!" + PI + AliasMe.AcceptRejectRule.None);
