@@ -1,5 +1,4 @@
-﻿// Sharp10 GlobalUsings_Framework Use.cs
-namespace GlobalUsings_Framework
+﻿namespace GlobalUsings_Framework
 {
     public class Use
     {
@@ -7,6 +6,7 @@ namespace GlobalUsings_Framework
         {
             Console.WriteLine();
             var list = new List<string>();
+            new ClassFromLib();
         }
     }
 }

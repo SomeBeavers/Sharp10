@@ -9,4 +9,8 @@ namespace GlobalUsing_ReferenceMe_Project
             Console.WriteLine();
         }
     }
+
+    public class Class1
+    {
+    }
 }
