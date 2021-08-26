@@ -1,8 +1,4 @@
-﻿// Sharp10 GlobalUsing_ReferenceMe_Project2 StaticClass.cs
-
-using System;
-
-namespace GlobalUsing_ReferenceMe_Project
+﻿namespace GlobalUsing_ReferenceMe_Project
 {
     public static class StaticClass
     {

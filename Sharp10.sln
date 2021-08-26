@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalUsing_ReferenceMe_Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalUsings_Framework_Lib", "GlobalUsings_Framework_Lib\GlobalUsings_Framework_Lib.csproj", "{E574ADFC-9576-4252-985A-15DEBCCC52D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseDll_Dll2", "UseDll_Dll2\UseDll_Dll2.csproj", "{4DB04FB2-6223-44EA-8605-B785F3C95C0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{E574ADFC-9576-4252-985A-15DEBCCC52D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E574ADFC-9576-4252-985A-15DEBCCC52D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E574ADFC-9576-4252-985A-15DEBCCC52D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB04FB2-6223-44EA-8605-B785F3C95C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB04FB2-6223-44EA-8605-B785F3C95C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB04FB2-6223-44EA-8605-B785F3C95C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB04FB2-6223-44EA-8605-B785F3C95C0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

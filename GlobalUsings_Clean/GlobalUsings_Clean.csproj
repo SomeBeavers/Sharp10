@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="testf\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\GlobalUsing_ReferenceMe_Project2\GlobalUsing_ReferenceMe_Project2.csproj" />
     <ProjectReference Include="..\GlobalUsing_ReferenceMe_Project\GlobalUsing_ReferenceMe_Project.csproj" />
   </ItemGroup>

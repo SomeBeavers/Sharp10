@@ -1,5 +1,4 @@
-﻿global using System;
-
+﻿
 namespace GlobalUsing_ReferenceMe_Project
 {
     public class ReferenceMe
@@ -7,6 +6,7 @@ namespace GlobalUsing_ReferenceMe_Project
         public void Method()
         {
             Console.WriteLine();
+            return;
         }
     }
 

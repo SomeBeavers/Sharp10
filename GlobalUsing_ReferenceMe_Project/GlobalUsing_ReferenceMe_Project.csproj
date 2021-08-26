@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <LangVersion>preview</LangVersion>
+    <RootNamespace>GlobalUsing_ReferenceMe_Project_renamed</RootNamespace>
   </PropertyGroup>
 
 </Project>

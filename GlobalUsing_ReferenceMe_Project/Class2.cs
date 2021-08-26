@@ -1,4 +1,4 @@
-﻿
+﻿global using System;
 
 namespace GlobalUsing_ReferenceMe_Project
 {
