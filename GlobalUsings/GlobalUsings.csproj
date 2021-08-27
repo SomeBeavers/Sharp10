@@ -17,4 +17,9 @@
     <ProjectReference Include="..\GlobalUsing_ReferenceMe_Project\GlobalUsing_ReferenceMe_Project.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="InnerFolder\" />
+    <Folder Include="Refactorings\" />
+  </ItemGroup>
+
 </Project>

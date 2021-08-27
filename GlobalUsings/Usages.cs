@@ -11,6 +11,16 @@
             Console.WriteLine();
 
             Clear();
+
+            try
+            {
+
+            }
+            catch (NotImplementedException e)
+            {
+                WriteLine(e);
+                throw;
+            }
         }
     }
 }

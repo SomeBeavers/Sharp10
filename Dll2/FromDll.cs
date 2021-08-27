@@ -8,7 +8,7 @@ namespace Dll
         public const string myString = "myString";
         public const string ConstStringFromDll = $"{myString} {nameof(i)} - string";
 
-        public void Test()
+        public void Test2()
         {
             Console.WriteLine();
         }
