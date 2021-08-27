@@ -1,6 +1,4 @@
-﻿using System;
-
-[assembly:System1]
+﻿[assembly:System1]
 namespace Sharp10
 {
     public class GlobalUsingDirective
