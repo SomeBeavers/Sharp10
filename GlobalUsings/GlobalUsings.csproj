@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="InnerFolder\" />
-    <Folder Include="Refactorings\" />
   </ItemGroup>
 
 </Project>

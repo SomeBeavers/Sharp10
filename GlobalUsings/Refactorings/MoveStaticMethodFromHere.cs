@@ -6,6 +6,7 @@ namespace GlobalUsings.Refactorings
     {
         public static void StaticMethod1()
         {
+            var first = new List<string>().First();
         }
 
         public static void MoveMe()
