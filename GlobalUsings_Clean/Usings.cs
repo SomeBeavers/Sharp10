@@ -1,3 +1,3 @@
 ﻿
 global using From2;
-global using From1;
+// global using From1;

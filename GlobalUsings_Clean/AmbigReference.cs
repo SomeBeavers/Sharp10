@@ -9,7 +9,7 @@ namespace GlobalUsings_Clean
         }
         private void Test()
         {
-            //new ClassWithSameName();
+            new ClassWithSameName();
         }
     }
 }

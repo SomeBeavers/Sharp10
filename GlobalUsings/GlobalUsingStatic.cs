@@ -1,6 +1,7 @@
 ﻿global using System;
 global using static System.Math;
-using System.Collections.Specialized;
+global using System.Globalization;
+
 
 namespace GlobalUsings
 {
@@ -9,8 +10,8 @@ namespace GlobalUsings
     {
         private void Test()
         {
-            new ListDictionary();
-           // new ListBindableAttribute();
+            //new ListDictionary();
+            //new ListBindableAttribute();
             var pi = PI;
             var s = Tau;
         }

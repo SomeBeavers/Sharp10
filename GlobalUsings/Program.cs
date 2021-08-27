@@ -1,3 +1,1 @@
-﻿//global using System;
-
-Console.WriteLine(PI);
+﻿Console.WriteLine(PI);

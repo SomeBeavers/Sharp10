@@ -1,6 +1,6 @@
 ﻿// Sharp10 GlobalUsings GlobalUsingAlias.cs
 
-global using MyAlias = Newtonsoft.Json;
+
 
 namespace GlobalUsings
 {

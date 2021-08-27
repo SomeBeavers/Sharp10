@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dll", "Dll\Dll.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework.csproj", "{B2EC4485-E782-4E90-B3E4-BA1347B7CA33}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{27B8800D-535E-47FB-8AF4-604F68D029D9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MixedDeconstruction", "MixedDeconstruction\MixedDeconstruction.csproj", "{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotSharp10", "NotSharp10\NotSharp10.csproj", "{9D84FF39-6560-4B2B-B42F-F2DF55555307}"
@@ -45,11 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dll2", "Dll2\Dll2.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalUsings_Clean", "GlobalUsings_Clean\GlobalUsings_Clean.csproj", "{643BCC2E-2908-4115-9498-56A24272894C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalUsing_ReferenceMe_Project2", "GlobalUsing_ReferenceMe_Project2\GlobalUsing_ReferenceMe_Project2.csproj", "{920C1DC6-B5FA-4CB3-8099-EC68EE7B6BF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalUsing_ReferenceMe_Project2", "GlobalUsing_ReferenceMe_Project2\GlobalUsing_ReferenceMe_Project2.csproj", "{920C1DC6-B5FA-4CB3-8099-EC68EE7B6BF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalUsings_Framework_Lib", "GlobalUsings_Framework_Lib\GlobalUsings_Framework_Lib.csproj", "{E574ADFC-9576-4252-985A-15DEBCCC52D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseDll_Dll2", "UseDll_Dll2\UseDll_Dll2.csproj", "{4DB04FB2-6223-44EA-8605-B785F3C95C0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalUsings_use_Dll_Dll2", "UseDll_Dll2\GlobalUsings_use_Dll_Dll2.csproj", "{4DB04FB2-6223-44EA-8605-B785F3C95C0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,10 +83,6 @@ Global
 		{B2EC4485-E782-4E90-B3E4-BA1347B7CA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2EC4485-E782-4E90-B3E4-BA1347B7CA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2EC4485-E782-4E90-B3E4-BA1347B7CA33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27B8800D-535E-47FB-8AF4-604F68D029D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA7D818-54B2-4AC2-8B21-3EB3FE12E2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU

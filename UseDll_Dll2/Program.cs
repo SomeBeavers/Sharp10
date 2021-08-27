@@ -1,3 +1,3 @@
-﻿
-Console.WriteLine();
-new FromDll().Test();
+﻿Console.WriteLine();
+// ambig
+//new FromDll().Test();
