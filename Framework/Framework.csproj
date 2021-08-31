@@ -46,6 +46,7 @@
     <Compile Include="FileScopedNamespace.cs" />
     <Compile Include="MixedDeconstruction_Framework.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SealedRecordToString.cs" />
     <Compile Include="UseFileScopedNamespace.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
