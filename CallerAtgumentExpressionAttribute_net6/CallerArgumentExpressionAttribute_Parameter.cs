@@ -5,9 +5,18 @@ namespace CallerArgumentExpressionAttribute_net6
     // ReSharper disable once InconsistentNaming
     public static class CallerArgumentExpressionAttribute_Parameter
     {
-        public static void ExtensionMethod<T>(this T myT, T notMyT, 
-            [CallerArgumentExpression(null)] string text = "")
+        public static void ExtensionMethod<T>(this T @this, T notMyT, 
+            [CallerArgumentExpression("this")] string text = "")
         {
+            Console.WriteLine($"CallerArgumentExpression: {text}");
+        }
+    }
+
+    public class Use_CallerArgumentExpressionAttribute_Parameter
+    {
+        private void Test()
+        {
+            "".ExtensionMethod("", "111");
         }
     }
 }
