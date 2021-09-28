@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CallerArgumentExpressionAttribute_VB</RootNamespace>
     <TargetFramework>net6.0</TargetFramework>
-    <Langversion>preview</Langversion>
-      <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
 </Project>

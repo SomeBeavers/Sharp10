@@ -59,9 +59,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SealedRecordToString", "Sea
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CallerArgumentExpressionAttribute", "CallerArgumentExpressionAttribute", "{8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallerArgumentExpressionAttribute_net6", "CallerAtgumentExpressionAttribute_net6\CallerArgumentExpressionAttribute_net6.csproj", "{A9EB1F01-33B3-4AD9-A5AD-73AE1AD8DA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallerArgumentExpressionAttribute_net6", "CallerAtgumentExpressionAttribute_net6\CallerArgumentExpressionAttribute_net6.csproj", "{A9EB1F01-33B3-4AD9-A5AD-73AE1AD8DA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallerArgumentExpressionAttribute_net5", "CallerArgumentExpressionAttribute_net5\CallerArgumentExpressionAttribute_net5.csproj", "{BF9B820E-68D3-4D16-9017-49DEEDEF8F41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallerArgumentExpressionAttribute_net5", "CallerArgumentExpressionAttribute_net5\CallerArgumentExpressionAttribute_net5.csproj", "{BF9B820E-68D3-4D16-9017-49DEEDEF8F41}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CallerArgumentExpressionAttribute_VB", "CallerArgumentExpressionAttribute_VB\CallerArgumentExpressionAttribute_VB.vbproj", "{2CA75AA6-36F2-4935-B9AC-8591D21546AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +171,10 @@ Global
 		{BF9B820E-68D3-4D16-9017-49DEEDEF8F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF9B820E-68D3-4D16-9017-49DEEDEF8F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF9B820E-68D3-4D16-9017-49DEEDEF8F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,6 +201,7 @@ Global
 		{DB2688D9-0C9E-4C0B-9F48-43C77D246326} = {3408A8DA-40A4-41B4-BB9D-313F5E048A4D}
 		{A9EB1F01-33B3-4AD9-A5AD-73AE1AD8DA60} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
 		{BF9B820E-68D3-4D16-9017-49DEEDEF8F41} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
+		{2CA75AA6-36F2-4935-B9AC-8591D21546AF} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74C4B08B-0D46-4C85-8C13-65CE0F4333AB}
