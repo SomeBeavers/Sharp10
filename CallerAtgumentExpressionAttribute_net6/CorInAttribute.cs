@@ -7,7 +7,9 @@ namespace CallerArgumentExpressionAttribute_net6
         public class MyAttribute : Attribute
         {
             public MyAttribute(string s, 
-                [CallerArgumentExpression("s")] string x = "") { }
+                [CallerArgumentExpression("s")
+                 //, CallerArgumentExpression("s")
+                ] string x = "") { }
         }
 
         [My("Hello")]

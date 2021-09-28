@@ -1,9 +1,17 @@
 ﻿// Sharp10 CallerArgumentExpressionAttribute_net6 CallerArgumentExpressionAttribute_Members.cs
 
+using System.Runtime.InteropServices;
+
 namespace CallerArgumentExpressionAttribute_net6
 {
     public class Members
     {
+        delegate void D(string s1, 
+            [CallerArgumentExpression("s1")]
+            [Optional]
+            [DefaultParameterValue("default")]
+             string s2);
+
         public delegate void PerformCalculation(int x, int y, 
             [CallerArgumentExpression("x")]string s = "");
 

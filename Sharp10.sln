@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallerArgumentExpressionAtt
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CallerArgumentExpressionAttribute_VB", "CallerArgumentExpressionAttribute_VB\CallerArgumentExpressionAttribute_VB.vbproj", "{2CA75AA6-36F2-4935-B9AC-8591D21546AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallerArgumentExpressionAttribute_Framework", "CallerArgumentExpressionAttribute_Framework\CallerArgumentExpressionAttribute_Framework.csproj", "{2D1C71A7-FD94-4963-9958-F805EFEEA402}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA75AA6-36F2-4935-B9AC-8591D21546AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1C71A7-FD94-4963-9958-F805EFEEA402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1C71A7-FD94-4963-9958-F805EFEEA402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1C71A7-FD94-4963-9958-F805EFEEA402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1C71A7-FD94-4963-9958-F805EFEEA402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +208,7 @@ Global
 		{A9EB1F01-33B3-4AD9-A5AD-73AE1AD8DA60} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
 		{BF9B820E-68D3-4D16-9017-49DEEDEF8F41} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
 		{2CA75AA6-36F2-4935-B9AC-8591D21546AF} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
+		{2D1C71A7-FD94-4963-9958-F805EFEEA402} = {8ECCB5EA-ACDD-4ACB-AD42-78A2AB8D3F1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74C4B08B-0D46-4C85-8C13-65CE0F4333AB}
