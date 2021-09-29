@@ -6,6 +6,15 @@ namespace CallerArgumentExpressionAttribute_net6
 {
     public class Members
     {
+
+        private const string i = nameof(i);
+
+        public int this[int i, [CallerArgumentExpression(i)] string s = " < default - arg > "]
+        {
+            get => i;
+            set => Console.WriteLine($"{i}, {s}");
+        }
+
         delegate void D(string s1, 
             [CallerArgumentExpression("s1")]
             [Optional]
@@ -20,6 +29,11 @@ namespace CallerArgumentExpressionAttribute_net6
         {
             throw new ArgumentOutOfRangeException("Property");
             throw new ArgumentOutOfRangeException("Property");
+        }
+
+        static void Log2(int p, [CallerArgumentExpression("p")][CallerMemberName] string arg = " < default > ")
+        {
+            Console.WriteLine(arg);
         }
 
         public Members()

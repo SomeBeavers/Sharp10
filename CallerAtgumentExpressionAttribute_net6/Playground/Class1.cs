@@ -44,8 +44,32 @@ namespace CallerArgumentExpressionAttribute_net6.Playground
         }
     }
 
+    class Derived2 : Base
+    {
+        const string p = nameof(p);
+        public Derived2(int p, [CallerArgumentExpression(p)] string arg = " < default - arg - derived2 > ")
+        {
+            Console.WriteLine("Derived2 class: " + arg);
+        }
+    }
 
-    partial class A
+    class MyClass
+    {
+        const string pp = nameof(pp);
+        static void Log([CallerArgumentExpression(pp)] string arg = " < default > ")
+        {
+            Console.WriteLine(arg);
+        }
+
+        const string p = nameof(p);
+        static void Log2(int p, [CallerArgumentExpression("p")][CallerMemberName] string arg = " < default > ")
+        {
+            Console.WriteLine(arg);
+        }
+    }
+
+
+partial class A
     {
         //partial void OnSomethingHappened(string s);
         partial void OnSomethingHappened(String s, string text = "");
