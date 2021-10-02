@@ -25,11 +25,13 @@ namespace CallerArgumentExpressionAttribute_net6
         //}
 
         private void Test2<T>(bool parameterName, string s,
-            string s2,
-            [CallerArgumentExpressionAttribute("t2")] string t = default,
-            [CallerArgumentExpressionAttribute("t")] string t2 = default)
+            string s2
+            //,
+            //[CallerArgumentExpressionAttribute("t2")] string t = default,
+            //[CallerArgumentExpressionAttribute("t")] string t2 = default
+            )
         {
-            Console.WriteLine($"CallerArgumentExpression: {t}");
+            Console.WriteLine($"CallerArgumentExpression: ");
         }
 
         //public void Test3([CallerArgumentExpression("1")]string optional = "")
