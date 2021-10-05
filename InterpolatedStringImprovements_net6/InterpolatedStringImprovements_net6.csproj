@@ -16,4 +16,8 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InterpolatedStringImprovements_net6_Lib\InterpolatedStringImprovements_net6_Lib.csproj" />
+  </ItemGroup>
+
 </Project>
