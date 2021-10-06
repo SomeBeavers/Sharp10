@@ -20,4 +20,8 @@
     <ProjectReference Include="..\InterpolatedStringImprovements_net6_Lib\InterpolatedStringImprovements_net6_Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Playground\" />
+  </ItemGroup>
+
 </Project>
