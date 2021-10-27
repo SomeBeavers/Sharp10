@@ -1,4 +1,7 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace MyNamespace
 {
@@ -54,6 +57,11 @@ namespace MyNamespace
             //    handler.AppendFormatted(name) &&
             //    handler.AppendLiteral(" will never be printed because info is < trace!");
             //receiverTemp.LogTrace(handler);
+        }
+
+        private void PassStringInterpolation()
+        {
+            Debug.Assert(true, "true {0}", String.Empty, "test");
         }
     }
 }

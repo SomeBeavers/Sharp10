@@ -3,6 +3,7 @@
 using System;
 using System.Globalization;
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 
 namespace MyNamespace
 {
@@ -87,6 +88,10 @@ namespace MyNamespace
         public void Log([InterpolatedStringHandlerArgument("")] AttributeOnClass c)
         {
         }
+        [StringFormatMethod("format")]
+        public void Log(string format, params string[] args)
+        {
+        }
     }
     public class ClassWithHandlerArgumentAttribute2: ClassWithHandlerArgumentAttributeBase
     {
@@ -114,6 +119,16 @@ namespace MyNamespace
         {
             throw new NotImplementedException();
         }
+
+        [StringFormatMethod("format")]
+        public void Log(string format, params string[] args)
+        {
+        }
+
+        [StringFormatMethod("format")]
+        public void Log(bool b, string format, params string[] args)
+        {
+        }
     }
 
     class Use2
@@ -122,6 +137,8 @@ namespace MyNamespace
         {
             var classWithHandlerArgumentAttribute = new ClassWithHandlerArgumentAttribute();
             classWithHandlerArgumentAttribute.Log($"{1:D} test");
+            var test = "test";
+            classWithHandlerArgumentAttribute.Log("{0}", test);
 
             var classWithHandlerArgumentAttribute2 = new ClassWithHandlerArgumentAttribute2();
             var i = 2;
@@ -132,6 +149,10 @@ namespace MyNamespace
             const string task = "task";
             recordWithHandlerArgumentAttribute1.Log("", null, $"{task}" + $" tes t");
             recordWithHandlerArgumentAttribute1.Log($"{task}" + $" tes t");
+
+            recordWithHandlerArgumentAttribute1.Log(@"test {0} {1}", "string", 1.ToString());
         }
+
+        private static string Args() => "test";
     }
 }

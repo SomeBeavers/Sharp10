@@ -1,6 +1,8 @@
 ﻿// Sharp10 InterpolatedStringImprovements_net6 SeveralHandlers.cs
 
+using System;
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 
 namespace MyNamespace
 {
@@ -36,6 +38,10 @@ namespace MyNamespace
         public void M(Handler1 handler)
         {
         }
+        [StringFormatMethod("handler")]
+        public void M(string handler, params object[] a)
+        {
+        }
 
         public void M(Handler2 handler)
         {
@@ -46,7 +52,7 @@ namespace MyNamespace
     {
         private void Test(C c)
         {
-            //c.M($"{X}");
+            c.M(@"{0}", X);
         }
 
         public string X { get; set; }

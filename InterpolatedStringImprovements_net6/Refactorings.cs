@@ -1,11 +1,12 @@
 ﻿// Sharp10 InterpolatedStringImprovements_net6 Refactorings.cs
 
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 
 namespace InterpolatedStringImprovements_net6
 {
     [InterpolatedStringHandler]
-    public class Refactorings_Handler
+    public struct Refactorings_Handler
     {
         public Refactorings_Handler(int t, int t1)
         {
@@ -28,6 +29,20 @@ namespace InterpolatedStringImprovements_net6
         public static void Log(this string s, Refactorings_Handler handler)
         {
         }
+
+        [StringFormatMethod("handler")]
+        public static void Log(this string s, string handler, params object[] a)
+        {
+        }
+        [StringFormatMethod("handler")]
+        public static void Log(string handler, params object[] a)
+        {
+        }
+
+        public static void Log(Refactorings_Handler handler)
+        {
+        }
+
         //public static void Log(this string s, string s2)
         //{
         //}
@@ -37,7 +52,7 @@ namespace InterpolatedStringImprovements_net6
     {
         public Refactorings_Handler Property { get; set; } = $"test";
 
-        private Refactorings_Handler? field1;
+        private string field1;
         private string? _field2 = "";
 
         public Use7()
@@ -54,6 +69,11 @@ namespace InterpolatedStringImprovements_net6
             //"".Log($"{this._field2}");
  
             "".Log($"{Method()}");
+            "".Log("{0}", Method());
+            RefactoringsLogger.Log($"{Method()}");
+
+
+
             "".Log($"{field1.ToString()}");
             "".Log(Method2());
             "".Log(Property);

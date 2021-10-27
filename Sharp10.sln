@@ -71,11 +71,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterpolatedStringImproveme
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterpolatedStringImprovements_net6", "InterpolatedStringImprovements_net6\InterpolatedStringImprovements_net6.csproj", "{15920BE9-67D5-4BBD-831E-9D6D93669474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolatedStringImprovements_net6_Lib", "InterpolatedStringImprovements_net6_Lib\InterpolatedStringImprovements_net6_Lib.csproj", "{86E0655D-78E4-4FDF-826A-2C03E89E0471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterpolatedStringImprovements_net6_Lib", "InterpolatedStringImprovements_net6_Lib\InterpolatedStringImprovements_net6_Lib.csproj", "{86E0655D-78E4-4FDF-826A-2C03E89E0471}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolatedStringImprovements_Framework", "InterpolatedStringImprovements_Framework\InterpolatedStringImprovements_Framework.csproj", "{3F077A1B-89D2-492F-A17B-2C77869FD700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolatedStringImprovements_net5", "InterpolatedStringImprovements_net5\InterpolatedStringImprovements_net5.csproj", "{0BBB473C-96A9-4666-9075-2FB236D91AE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterpolatedStringImprovements_net5", "InterpolatedStringImprovements_net5\InterpolatedStringImprovements_net5.csproj", "{0BBB473C-96A9-4666-9075-2FB236D91AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolatedString_nuget", "InterpolatedString_nuget\InterpolatedString_nuget.csproj", "{7AF6B34F-9FB0-460E-B96E-108D65C22921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -207,6 +209,10 @@ Global
 		{0BBB473C-96A9-4666-9075-2FB236D91AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BBB473C-96A9-4666-9075-2FB236D91AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BBB473C-96A9-4666-9075-2FB236D91AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF6B34F-9FB0-460E-B96E-108D65C22921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF6B34F-9FB0-460E-B96E-108D65C22921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF6B34F-9FB0-460E-B96E-108D65C22921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF6B34F-9FB0-460E-B96E-108D65C22921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,6 +245,7 @@ Global
 		{86E0655D-78E4-4FDF-826A-2C03E89E0471} = {78002490-7FDC-4C5E-94B7-08C21BA9B169}
 		{3F077A1B-89D2-492F-A17B-2C77869FD700} = {78002490-7FDC-4C5E-94B7-08C21BA9B169}
 		{0BBB473C-96A9-4666-9075-2FB236D91AE6} = {78002490-7FDC-4C5E-94B7-08C21BA9B169}
+		{7AF6B34F-9FB0-460E-B96E-108D65C22921} = {78002490-7FDC-4C5E-94B7-08C21BA9B169}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74C4B08B-0D46-4C85-8C13-65CE0F4333AB}

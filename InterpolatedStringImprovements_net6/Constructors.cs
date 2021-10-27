@@ -2,12 +2,13 @@
 
 using System;
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 
 
 namespace MyNamespace
 {
     [InterpolatedStringHandler]
-    public class MyHandler
+    public struct MyHandler
     {
         public MyHandler(int t, int t1, string loggerName, MyHandlerLogger logger)
         {
@@ -59,6 +60,13 @@ namespace MyNamespace
         public static void Log(string simpleString)
         {
         }
+
+        [StringFormatMethod("handler")]
+        public static void Log(string handler, params object[] args)
+        {
+        }
+
+
         public static void Log(MyHandler handler)
         {
         }
@@ -89,6 +97,8 @@ namespace MyNamespace
             MyHandlerLogger.Log(name: out name, handler:$"{1} test");
             MyHandlerLogger.Log($"{1} test");
             MyHandlerLogger.Log($"test {const_local_string}");
+            MyHandlerLogger.Log("test {0}", const_local_string);
+            MyHandlerLogger.Log("{0} test", 1);
 
             MyHandlerLogger.Log(numbers: new[] { 1, 2, 3 }, handler: $"{1} test");
 
