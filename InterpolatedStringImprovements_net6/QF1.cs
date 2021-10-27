@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 
@@ -95,6 +96,7 @@ public class Use
 
     public void Test(A a)
     {
+        Debug.Assert(true, $"{Name}");
         new Logger().Log("name", $"{Name} {1}");
 
         //new Logger().Log("{0} {1}", Name, 1);

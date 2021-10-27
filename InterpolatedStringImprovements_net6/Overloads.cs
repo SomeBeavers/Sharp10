@@ -3,16 +3,17 @@
 using System;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 
 namespace MyNamespace
 {
-    public partial class Overloads
-    {
-        //public partial bool AppendFormatted(string s);
-    }
+    //public partial class Overloads
+    //{
+    //    //public partial bool AppendFormatted(string s);
+    //}
 
     [InterpolatedStringHandler]
-    public partial class Overloads
+    public struct Overloads
     {
         #region C-ors
         public Overloads(int t, int t1)
@@ -115,6 +116,18 @@ namespace MyNamespace
         {
             Console.WriteLine("Log(Overloads handler)");
         }
+
+        [StringFormatMethod("handler")]
+        public void Log(string handler, params object[] p)
+        {
+            Console.WriteLine("Log(string handler, params object[] p)");
+        }
+        [StringFormatMethod("handler")]
+        public void Log(string handler, ReadOnlySpan<string> p)
+        {
+            Console.WriteLine("Log(string handler, params object[] p)");
+        }
+
         public void LogRefStruct(RefStructHandler refStructHandler)
         {
             Console.WriteLine("Log(Overloads handler)");
@@ -166,7 +179,13 @@ namespace MyNamespace
 
             new Logger2().Log($"");
             new Logger2().Log($"{"test"}");
-            new Logger2().Log($"{'c'}");
+            new Logger2().Log($"{'c'} test");
+
+            char c = 'c';
+            new Logger2().Log("{0} test", c);
+            string v = "";
+            new Logger2().Log("{0} test", 1);
+
             new Logger2().Log($"{1}");
             new Logger2().Log($"{constVariable}");
             new Logger2().Log($"{StaticField}");
@@ -221,12 +240,15 @@ namespace MyNamespace
         private void Test(Logger2 logger, string stringParameter)
         {
             new Logger2().Log($"{stringParameter} literal");
+            new Logger2().Log("{0} literal", stringParameter);
 
             InnerStruct innerStruct = new InnerStruct();
             new Logger2().Log($"{innerStruct:Test} literal");
+            new Logger2().Log("{0:Test} literal", innerStruct);
 
             InnerGeneric<string> innerGeneric = new InnerGeneric<string>();
             new Logger2().Log($"{innerGeneric} literal");
+            new Logger2().Log("{0} literal", innerGeneric);
 
             var a1 = new A1();
             // ambig
@@ -234,11 +256,14 @@ namespace MyNamespace
 
             string s = "";
             new Logger2().Log($"{(object)s, 1 : test} literal");
+            new Logger2().Log("{0, 1 : test} literal", (object)s);
 
             ReadOnlySpan<string> span = s.Split(',');
             string[] strings = s.Split(',');
 
             new Logger2().Log($"{span} literal");
+            new Logger2().Log("{0} literal", span);
+            new Logger2().Log($"{s.Split(',')} literal");
             new Logger2().Log($"{s.Split(',')} literal");
 
             new Logger2().Log("", $"");
@@ -247,10 +272,12 @@ namespace MyNamespace
 
             new Logger2().Log($"{sc, 1}");
             new Logger2().Log($"{sc}");
+            new Logger2().Log("{0}", sc);
 
             if (sc is Derived1)
             {
                 new Logger2().Log($"{sc as Derived1, 1}");
+                new Logger2().Log("{0, 1}", sc as Derived1);
             }
         }
 
