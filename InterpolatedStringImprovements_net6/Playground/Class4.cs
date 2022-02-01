@@ -76,7 +76,7 @@ namespace MyNamespace11
 
 
             [StringFormatMethod("handler")]
-            public static void Log(string name, string handler,  params int[] args)
+            public static void LogFormat(string name, string handler,  params int[] args)
             {
 
             }
@@ -92,7 +92,8 @@ namespace MyNamespace11
             {
                 MyHandlerLogger.Log("", $"{1} test");
                 var empty = "";
-                MyHandlerLogger.Log("", "{0}", 1);
+                var args = 1;
+                MyHandlerLogger.LogFormat("", "{0}", args);
 
                 MyHandlerLogger.Log($"{1} test");
                 MyHandlerLogger.Log("myLogger", $"{parameter1} test");
